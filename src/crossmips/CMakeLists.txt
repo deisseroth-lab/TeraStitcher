@@ -16,7 +16,7 @@ if(WITH_CUDA)
 		# enable CUDA-dependent code
 		add_definitions(-DUSECUDA)
 
-		CUDA_ADD_LIBRARY(crossmips STATIC ${crossmips_headers} ${crossmips_sources} compute_funcs.cu OPTIONS -arch sm_30)
+		CUDA_ADD_LIBRARY(crossmips STATIC ${crossmips_headers} ${crossmips_sources} compute_funcs.cu OPTIONS -arch sm_75)
 		
 	else(CUDA_FOUND)
 	
